@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tic-tac-container {
+  height: 420px;
+}
+.tic-tac {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-radius: 5px;
+  color: black;
+  border: #212121;
+  cursor: pointer;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+.rstbtn {
+  margin-top: 1rem;
+  padding: 8px 1rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+}
+.winner-class {
+  background-color: lightpink;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 70px;
+    height: 70px;
+  }
+  .tic-tac-container {
+     height: 380px;
+  }
+}
